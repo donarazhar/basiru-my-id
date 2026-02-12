@@ -235,9 +235,10 @@ position: absolute;
 bottom: 0;
 left: 0;
 right: 0;
-padding: 2rem;
-background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+padding: 3.5rem 2rem 4.5rem;
+background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
 color: #fff;
+z-index: 1;
 }
 
 .carousel-control-prev,
@@ -372,10 +373,10 @@ height: 50px;
 display: flex;
 align-items: center;
 justify-content: center;
-background: rgba(26, 188, 156, 0.15);
+background: rgba(26, 188, 156, 0.25);
 border-radius: 12px;
-color: var(--primary);
-font-size: 1.2rem;
+color: #fff;
+font-size: 1.3rem;
 margin-bottom: 1rem;
 }
 
@@ -698,17 +699,17 @@ height: 250px !important;
             <!-- Contact Info -->
             <div class="col-lg-4" data-aos="fade-right">
                 <div class="contact-info-card mb-4">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt text-white"></i>
                     <h6 class="text-white fw-bold">Alamat</h6>
                     <p class="text-white mb-0" style="opacity:0.7; font-size: 0.95rem;">Universitas Negeri Jakarta<br>Rawamangun, Jakarta Timur</p>
                 </div>
                 <div class="contact-info-card mb-4">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope text-white"></i>
                     <h6 class="text-white fw-bold">Email</h6>
                     <p class="text-white mb-0" style="opacity:0.7; font-size: 0.95rem;">info@basiru.my.id</p>
                 </div>
                 <div class="contact-info-card">
-                    <i class="fas fa-globe"></i>
+                    <i class="fas fa-globe text-white"></i>
                     <h6 class="text-white fw-bold">Website</h6>
                     <p class="text-white mb-0" style="opacity:0.7; font-size: 0.95rem;">basiru.my.id</p>
                 </div>
