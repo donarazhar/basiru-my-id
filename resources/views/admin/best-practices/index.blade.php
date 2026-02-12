@@ -19,6 +19,7 @@
                 <thead>
                     <tr>
                         <th width="50">#</th>
+                        <th width="120">Thumbnail</th>
                         <th>Judul</th>
                         <th>Penulis</th>
                         <th>Status</th>
@@ -30,6 +31,13 @@
                     @forelse($practices as $practice)
                     <tr>
                         <td class="text-muted">{{ $practice->id }}</td>
+                        <td>
+                            <img src="{{ $practice->image_path && file_exists(storage_path('app/public/' . $practice->image_path)) ? asset('storage/' . $practice->image_path) : asset('assets/img/placeholder-article.svg') }}"
+                                width="100" height="65"
+                                style="object-fit: cover; border-radius: 6px; border: 2px solid #e2e8f0;"
+                                alt="{{ $practice->title }}"
+                                onerror="this.src='{{ asset('assets/img/placeholder-article.svg') }}'">
+                        </td>
                         <td>
                             <div class="fw-semibold">{{ Str::limit($practice->title, 50) }}</div>
                         </td>
@@ -57,7 +65,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="6" class="text-center py-5">
+                        <td colspan="7" class="text-center py-5">
                             <div class="text-muted">
                                 <i class="fas fa-inbox fa-3x mb-3 opacity-25"></i>
                                 <p class="mb-0">Belum ada data praktik baik</p>

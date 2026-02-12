@@ -52,48 +52,6 @@ class ContactSeeder extends Seeder
                 'message' => 'Saya ingin berkontribusi menulis artikel praktik baik untuk website BASIRU. Bagaimana caranya? Mohon informasi lebih lanjut.',
                 'is_read' => false,
             ],
-            [
-                'name' => 'Fitri Handayani',
-                'email' => 'fitri.handayani@yahoo.com',
-                'phone' => '087890123456',
-                'message' => 'Video pembelajaran di BASIRU sangat membantu. Apakah ada rencana menambah video tentang pembelajaran sensorik? Terima kasih.',
-                'is_read' => false,
-            ],
-            [
-                'name' => 'Muhammad Rizki',
-                'email' => 'mrizki@gmail.com',
-                'phone' => '088901234567',
-                'message' => 'Selamat siang, saya mahasiswa PGPAUD semester 6. Apakah BASIRU menerima mahasiswa magang untuk program penelitian? Mohon infonya.',
-                'is_read' => false,
-            ],
-            [
-                'name' => 'Nurul Hidayah',
-                'email' => 'nurul.hidayah@gmail.com',
-                'phone' => null,
-                'message' => 'Saya guru PAUD di Bekasi. Apakah quiz di website ini bisa digunakan untuk asesmen di sekolah kami? Bagaimana cara mengaksesnya?',
-                'is_read' => false,
-            ],
-            [
-                'name' => 'Agus Prasetyo',
-                'email' => 'agus.prasetyo@gmail.com',
-                'phone' => '089012345678',
-                'message' => 'Website BASIRU sangat informatif! Apakah ada newsletter bulanan yang bisa saya langganan untuk update terbaru?',
-                'is_read' => false,
-            ],
-            [
-                'name' => 'Lina Kartika',
-                'email' => 'lina.kartika@gmail.com',
-                'phone' => '081122334455',
-                'message' => 'Assalamualaikum, saya ingin mengetahui lebih lanjut mengenai perpustakaan digital BASIRU. Apakah semua dokumen bisa diakses secara gratis?',
-                'is_read' => false,
-            ],
-            [
-                'name' => 'Wahyu Setiawan',
-                'email' => 'wahyu.s@gmail.com',
-                'phone' => '082233445566',
-                'message' => 'Bagus sekali program BASIRU ini. Apakah ada cabang atau mitra di kota Bandung? Kami ingin bekerja sama untuk kegiatan pelatihan guru.',
-                'is_read' => false,
-            ],
         ];
 
         foreach ($contacts as $contact) {

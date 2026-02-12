@@ -32,12 +32,10 @@
             @forelse($items as $item)
             <div class="col-md-6 col-lg-4 col-xl-3">
                 <div class="card card-hover h-100">
-                    @if($item->cover_image)
+                    @if($item->cover_image && file_exists(storage_path('app/public/' . $item->cover_image)))
                     <img src="{{ asset('storage/' . $item->cover_image) }}" class="card-img-top" alt="{{ $item->title }}" style="height: 200px; object-fit: cover;">
                     @else
-                    <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 200px; background: linear-gradient(135deg, #2c3e50, #3498db);">
-                        <i class="fas fa-book fa-4x text-white opacity-50"></i>
-                    </div>
+                    <img src="{{ asset('assets/img/placeholder-file.svg') }}" class="card-img-top" alt="{{ $item->title }}" style="height: 200px; object-fit: cover; background: #f0f4f8;">
                     @endif
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold text-secondary">{{ $item->title }}</h6>

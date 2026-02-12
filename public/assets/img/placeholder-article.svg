@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#d1fae5"/>
+  <rect x="315" y="100" width="170" height="120" rx="12" fill="#6ee7b7" opacity="0.4" stroke="#10b981" stroke-width="2"/>
+  <rect x="340" y="130" width="120" height="6" rx="3" fill="#10b981" opacity="0.5"/>
+  <rect x="340" y="145" width="100" height="6" rx="3" fill="#10b981" opacity="0.5"/>
+  <rect x="340" y="160" width="80" height="6" rx="3" fill="#10b981" opacity="0.5"/>
+  <rect x="340" y="175" width="110" height="6" rx="3" fill="#10b981" opacity="0.5"/>
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#065f46" text-anchor="middle">Tidak Ada Gambar</text>
+  <text x="400" y="298" font-family="Arial, sans-serif" font-size="14" fill="#10b981" text-anchor="middle">Upload gambar melalui halaman admin</text>
+</svg>

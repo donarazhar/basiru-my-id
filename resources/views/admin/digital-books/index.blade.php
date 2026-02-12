@@ -14,6 +14,7 @@
                 <thead>
                     <tr>
                         <th width="60">#</th>
+                        <th width="120">Thumbnail</th>
                         <th>Judul</th>
                         <th>Penulis</th>
                         <th>File</th>
@@ -25,6 +26,13 @@
                     @forelse($books as $book)
                     <tr>
                         <td>{{ $book->id }}</td>
+                        <td>
+                            <img src="{{ $book->cover_image && file_exists(storage_path('app/public/' . $book->cover_image)) ? asset('storage/' . $book->cover_image) : asset('assets/img/placeholder-document.svg') }}"
+                                width="100" height="65"
+                                style="object-fit: cover; border-radius: 6px; border: 2px solid #e2e8f0;"
+                                alt="{{ $book->title }}"
+                                onerror="this.src='{{ asset('assets/img/placeholder-document.svg') }}'">
+                        </td>
                         <td>{{ Str::limit($book->title, 40) }}</td>
                         <td>{{ $book->author ?? '-' }}</td>
                         <td><a href="{{ asset('storage/' . $book->file_path) }}" target="_blank" class="text-primary"><i class="fas fa-file-pdf me-1"></i> PDF</a></td>
@@ -39,7 +47,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="6" class="text-center py-4 text-muted">Belum ada data</td>
+                        <td colspan="7" class="text-center py-4 text-muted">Belum ada data</td>
                     </tr>
                     @endforelse
                 </tbody>

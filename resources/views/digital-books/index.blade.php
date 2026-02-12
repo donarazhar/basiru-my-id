@@ -18,12 +18,10 @@
             @forelse($books as $book)
             <div class="col-md-6 col-lg-4 col-xl-3">
                 <div class="card card-hover h-100">
-                    @if($book->cover_image)
+                    @if($book->cover_image && file_exists(storage_path('app/public/' . $book->cover_image)))
                     <img src="{{ asset('storage/' . $book->cover_image) }}" class="card-img-top" alt="{{ $book->title }}" style="height: 250px; object-fit: cover;">
                     @else
-                    <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #8e44ad, #3498db);">
-                        <i class="fas fa-book-open fa-4x text-white opacity-50"></i>
-                    </div>
+                    <img src="{{ asset('assets/img/placeholder-document.svg') }}" class="card-img-top" alt="{{ $book->title }}" style="height: 250px; object-fit: cover; background: #fef9e7;">
                     @endif
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold text-secondary">{{ $book->title }}</h6>

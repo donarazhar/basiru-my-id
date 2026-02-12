@@ -25,7 +25,7 @@
                     @forelse($galleries as $gallery)
                     <tr>
                         <td>{{ $gallery->id }}</td>
-                        <td><img src="{{ asset('storage/' . $gallery->image_path) }}" width="80" height="50" style="object-fit:cover; border-radius:6px;" onerror="this.src='https://via.placeholder.com/80x50/ccc/999?text=No+Img'"></td>
+                        <td><img src="{{ $gallery->image_path && file_exists(storage_path('app/public/' . $gallery->image_path)) ? asset('storage/' . $gallery->image_path) : asset('assets/img/placeholder-gallery.svg') }}" width="80" height="50" style="object-fit:cover; border-radius:6px;" onerror="this.src='{{ asset('assets/img/placeholder-gallery.svg') }}'"></td>
                         <td>{{ $gallery->title }}</td>
                         <td>{{ $gallery->order }}</td>
                         <td><span class="badge {{ $gallery->is_active ? 'bg-success' : 'bg-secondary' }} rounded-pill">{{ $gallery->is_active ? 'Aktif' : 'Nonaktif' }}</span></td>

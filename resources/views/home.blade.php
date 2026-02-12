@@ -523,11 +523,11 @@ height: 250px !important;
                         @foreach($galleries as $index => $gallery)
                         <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
                             <div class="position-relative" style="height: 480px; overflow: hidden;">
-                                <img src="{{ asset('storage/' . $gallery->image_path) }}"
+                                <img src="{{ $gallery->image_path && file_exists(storage_path('app/public/' . $gallery->image_path)) ? asset('storage/' . $gallery->image_path) : asset('assets/img/placeholder-gallery.svg') }}"
                                     class="w-100 h-100"
                                     style="object-fit: cover; object-position: center;"
                                     alt="{{ $gallery->title }}"
-                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    onerror="this.src='{{ asset('assets/img/placeholder-gallery.svg') }}'">
                                 <div class="d-none justify-content-center align-items-center text-center p-4 position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, #1abc9c, #16a085);">
                                     <div class="text-white">
                                         <i class="fas fa-image fa-4x mb-3" style="opacity:0.5;"></i>

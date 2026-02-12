@@ -18,12 +18,10 @@
             @forelse($practices as $practice)
             <div class="col-md-6 col-lg-4">
                 <div class="card card-hover h-100">
-                    @if($practice->image_path)
+                    @if($practice->image_path && file_exists(storage_path('app/public/' . $practice->image_path)))
                     <img src="{{ asset('storage/' . $practice->image_path) }}" class="card-img-top" alt="{{ $practice->title }}" style="height: 200px; object-fit: cover;">
                     @else
-                    <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 200px; background: linear-gradient(135deg, #1abc9c, #16a085);">
-                        <i class="fas fa-users fa-4x text-white opacity-50"></i>
-                    </div>
+                    <img src="{{ asset('assets/img/placeholder-article.svg') }}" class="card-img-top" alt="{{ $practice->title }}" style="height: 200px; object-fit: cover;">
                     @endif
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bold text-secondary">{{ $practice->title }}</h5>

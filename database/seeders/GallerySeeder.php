@@ -9,7 +9,7 @@ class GallerySeeder extends Seeder
 {
     public function run(): void
     {
-        for ($i = 1; $i <= 16; $i++) {
+        for ($i = 1; $i <= 6; $i++) {
             Gallery::updateOrCreate(
                 ['title' => "Dokumentasi Kegiatan BASIRU $i"],
                 [

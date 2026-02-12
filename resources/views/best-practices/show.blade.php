@@ -15,8 +15,10 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <article class="bg-white rounded-4 shadow-sm p-4 p-md-5">
-                    @if($practice->image_path)
+                    @if($practice->image_path && file_exists(storage_path('app/public/' . $practice->image_path)))
                     <img src="{{ asset('storage/' . $practice->image_path) }}" class="w-100 rounded-3 mb-4" alt="{{ $practice->title }}" style="max-height: 400px; object-fit: cover;">
+                    @else
+                    <img src="{{ asset('assets/img/placeholder-article.svg') }}" class="w-100 rounded-3 mb-4" alt="{{ $practice->title }}" style="max-height: 400px; object-fit: cover;">
                     @endif
 
                     <h1 class="fw-bold text-secondary mb-3" style="font-size: 2rem;">{{ $practice->title }}</h1>

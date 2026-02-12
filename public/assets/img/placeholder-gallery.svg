@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#e2e8f0"/>
+  <rect x="300" y="130" width="200" height="160" rx="16" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="355" cy="185" r="22" fill="#94a3b8"/>
+  <polygon points="310,270 400,200 460,240 490,220 490,280 310,280" fill="#94a3b8"/>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#64748b" text-anchor="middle">Tidak Ada Gambar</text>
+  <text x="400" y="368" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Upload gambar melalui halaman admin</text>
+</svg>

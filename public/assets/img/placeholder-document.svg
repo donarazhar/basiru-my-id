@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fef3c7"/>
+  <rect x="335" y="110" width="130" height="170" rx="8" fill="#fbbf24" opacity="0.3" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="355" y="150" width="90" height="6" rx="3" fill="#f59e0b" opacity="0.5"/>
+  <rect x="355" y="165" width="70" height="6" rx="3" fill="#f59e0b" opacity="0.5"/>
+  <rect x="355" y="180" width="80" height="6" rx="3" fill="#f59e0b" opacity="0.5"/>
+  <rect x="355" y="195" width="50" height="6" rx="3" fill="#f59e0b" opacity="0.5"/>
+  <rect x="355" y="210" width="90" height="6" rx="3" fill="#f59e0b" opacity="0.5"/>
+  <rect x="355" y="225" width="60" height="6" rx="3" fill="#f59e0b" opacity="0.5"/>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#92400e" text-anchor="middle">Tidak Ada Dokumen</text>
+  <text x="400" y="368" font-family="Arial, sans-serif" font-size="14" fill="#b45309" text-anchor="middle">Upload file melalui halaman admin</text>
+</svg>

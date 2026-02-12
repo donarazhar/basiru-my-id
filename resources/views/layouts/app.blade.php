@@ -565,6 +565,59 @@
                 background: var(--secondary-dark) !important;
             }
 
+            /* Mobile toggler */
+            .navbar-toggler {
+                border: 2px solid rgba(255, 255, 255, 0.3) !important;
+                padding: 0.4rem 0.6rem !important;
+                font-size: 1.1rem !important;
+                border-radius: 8px !important;
+                color: #fff !important;
+                background: rgba(26, 188, 156, 0.3) !important;
+                transition: all 0.3s ease;
+            }
+
+            .navbar-toggler:focus {
+                box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.4) !important;
+            }
+
+            .navbar-toggler:hover {
+                background: rgba(26, 188, 156, 0.5) !important;
+            }
+
+            /* Mobile brand */
+            .navbar-brand {
+                font-size: 1.1rem !important;
+                letter-spacing: 1px;
+                max-width: 70%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .navbar-brand img {
+                height: 28px !important;
+            }
+
+            /* Mobile collapse */
+            .navbar-collapse {
+                background: var(--secondary-dark);
+                border-radius: 0 0 16px 16px;
+                padding: 1rem;
+                margin: 0.5rem -12px 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .navbar-nav .nav-link {
+                padding: 0.75rem 1rem !important;
+                border-radius: 8px;
+                margin-bottom: 2px;
+            }
+
+            .navbar-nav .nav-link:hover,
+            .navbar-nav .nav-link.active {
+                background: rgba(26, 188, 156, 0.15);
+            }
+
             .page-section-heading {
                 font-size: 1.8rem;
             }
@@ -650,8 +703,8 @@
                 @endif
                 {{ \App\Models\SiteSetting::getValue('hero_heading', 'BASIRU') }}
             </a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu <i class="fas fa-bars"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
