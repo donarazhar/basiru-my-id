@@ -825,6 +825,11 @@
 
             <hr class="sidebar-divider">
 
+            <!-- Profil Saya -->
+            <a href="{{ route('admin.profile.edit') }}" class="sidebar-link {{ request()->routeIs('admin.profile.*') ? 'active' : '' }}">
+                <i class="fas fa-user-circle"></i> Profil Saya
+            </a>
+
             <!-- Pengaturan (standalone) -->
             <a href="{{ route('admin.site-settings.edit') }}" class="sidebar-link {{ request()->routeIs('admin.site-settings.*') ? 'active' : '' }}">
                 <i class="fas fa-cog"></i> Pengaturan Situs
@@ -857,15 +862,19 @@
                 <i class="fas fa-circle fa-xs"></i>
                 @yield('page-title', 'Dashboard')
             </h5>
-            <div class="ms-auto user-info">
+            <a href="{{ route('admin.profile.edit') }}" class="ms-auto user-info text-decoration-none">
                 <div class="text-end d-none d-md-block">
                     <div class="user-name">{{ Auth::user()->name }}</div>
                     <div class="user-role">Administrator</div>
                 </div>
+                @if(Auth::user()->photo)
+                <img src="{{ asset('storage/' . Auth::user()->photo) }}" alt="Avatar" class="user-avatar" style="object-fit:cover;">
+                @else
                 <div class="user-avatar">
                     {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
                 </div>
-            </div>
+                @endif
+            </a>
         </div>
 
         <div class="content-area">

@@ -7,6 +7,7 @@
     <meta name="description" content="{{ \App\Models\SiteSetting::getValue('site_description', 'BASIRU - Pengembangan Kompetensi Guru PAUD') }}" />
     <meta name="author" content="BASIRU.MY.ID" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    @yield('meta')
     <title>@yield('title', \App\Models\SiteSetting::getValue('site_title', 'BASIRU - Pengembangan Kompetensi Guru'))</title>
 
     <!-- Favicon -->
