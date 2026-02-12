@@ -1,59 +1,208 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/assets/img/logobasiru.png" alt="BASIRU Logo" width="120">
 </p>
 
-## About Laravel
+<h1 align="center">BASIRU.MY.ID</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <strong>Website Pengembangan Kompetensi Guru PAUD</strong><br>
+  Platform edukasi digital untuk mendukung peningkatan kompetensi guru Pendidikan Anak Usia Dini (PAUD)
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white" alt="Laravel 12">
+  <img src="https://img.shields.io/badge/PHP-8.2+-777BB4?logo=php&logoColor=white" alt="PHP 8.2+">
+  <img src="https://img.shields.io/badge/Bootstrap-5.2-7952B3?logo=bootstrap&logoColor=white" alt="Bootstrap 5">
+  <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white" alt="MySQL">
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📖 Tentang
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+**BASIRU** (Belajar Asyik Seru Inspiratif dan RUpawan) adalah website yang dirancang untuk para praktisi PAUD sebagai platform berbagi ilmu, praktik baik, dan sumber belajar digital. Website ini dikelola melalui admin panel yang lengkap dan mudah digunakan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ✨ Fitur Utama
 
-## Laravel Sponsors
+### 🌐 Website Publik
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Halaman Utama** — Hero section dinamis, galeri foto, video YouTube, quiz interaktif, dan formulir kontak
+- **Praktik Baik** — Kumpulan artikel best practice dengan cover image, paginasi, dan fitur share (WhatsApp, Facebook, Twitter, Copy Link)
+- **Perpustakaan** — Koleksi buku dan referensi dengan link download
+- **Buku Digital** — Koleksi e-book dengan cover image dan file PDF
+- **Open Graph** — Preview thumbnail & deskripsi saat link dibagikan di WhatsApp/sosial media
+- **Responsive** — Tampilan optimal di desktop, tablet, dan mobile
 
-### Premium Partners
+### 🔒 Admin Panel
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- **Dashboard** — Statistik ringkasan konten (galeri, video, artikel, quiz, perpustakaan, buku digital)
+- **Manajemen Galeri** — Upload, edit, hapus foto galeri
+- **Manajemen Video** — Kelola video YouTube dengan auto-thumbnail
+- **Manajemen Praktik Baik** — CRUD artikel dengan rich text editor
+- **Manajemen Buku Digital** — Upload cover & file PDF
+- **Manajemen Perpustakaan** — Kelola koleksi buku & referensi
+- **Manajemen Quiz** — Buat quiz interaktif untuk pengunjung
+- **Manajemen Pesan** — Baca & kelola pesan dari formulir kontak (badge notifikasi unread)
+- **Pengaturan Situs** — Konfigurasi judul, logo, favicon, hero section, sosial media, footer
+- **Profil Admin** — Upload foto, ubah nama, email, dan password
 
-## Contributing
+## 🛠️ Tech Stack
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Komponen   | Teknologi                       |
+| ---------- | ------------------------------- |
+| Backend    | Laravel 12 (PHP 8.2+)           |
+| Frontend   | Blade Templates, Bootstrap 5.2  |
+| Database   | MySQL 8.0                       |
+| Font       | Montserrat, Lato (Google Fonts) |
+| Icon       | Font Awesome 6                  |
+| Animasi    | AOS (Animate On Scroll)         |
+| Build Tool | Vite                            |
 
-## Code of Conduct
+## 📁 Struktur Proyek
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+basiru-web/
+├── app/
+│   ├── Http/Controllers/
+│   │   ├── Admin/              # Controller admin panel
+│   │   │   ├── DashboardController.php
+│   │   │   ├── GalleryController.php
+│   │   │   ├── VideoController.php
+│   │   │   ├── BestPracticeController.php
+│   │   │   ├── DigitalBookController.php
+│   │   │   ├── LibraryController.php
+│   │   │   ├── QuizController.php
+│   │   │   ├── ContactController.php
+│   │   │   ├── SiteSettingController.php
+│   │   │   └── ProfileController.php
+│   │   ├── HomeController.php          # Halaman utama
+│   │   ├── BestPracticeController.php  # Praktik baik (publik)
+│   │   ├── DigitalBookController.php   # Buku digital (publik)
+│   │   ├── LibraryController.php       # Perpustakaan (publik)
+│   │   └── ContactController.php       # Formulir kontak
+│   └── Models/
+│       ├── User.php
+│       ├── Gallery.php
+│       ├── Video.php
+│       ├── BestPractice.php
+│       ├── DigitalBook.php
+│       ├── LibraryItem.php
+│       ├── Quiz.php
+│       ├── Contact.php
+│       └── SiteSetting.php
+├── resources/views/
+│   ├── layouts/
+│   │   ├── app.blade.php       # Layout publik
+│   │   └── admin.blade.php     # Layout admin
+│   ├── admin/                  # Halaman admin panel
+│   ├── auth/                   # Login
+│   ├── best-practices/         # Halaman praktik baik
+│   ├── digital-books/          # Halaman buku digital
+│   ├── library/                # Halaman perpustakaan
+│   └── home.blade.php          # Halaman utama
+├── routes/
+│   └── web.php                 # Semua route (publik & admin)
+├── database/
+│   ├── migrations/             # Skema database
+│   └── seeders/                # Data awal
+└── public/
+    └── assets/                 # Asset statis (gambar, ikon)
+```
 
-## Security Vulnerabilities
+## 🚀 Instalasi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Prasyarat
 
-## License
+- PHP 8.2+
+- Composer
+- MySQL 8.0+
+- Node.js 18+ & npm
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Langkah Instalasi
+
+```bash
+# 1. Clone repository
+git clone https://github.com/donarazhar/basiru-my-id.git
+cd basiru-my-id
+
+# 2. Install dependencies
+composer install
+npm install
+
+# 3. Setup environment
+cp .env.example .env
+php artisan key:generate
+
+# 4. Konfigurasi database di .env
+# DB_DATABASE=basiru_web
+# DB_USERNAME=root
+# DB_PASSWORD=your_password
+
+# 5. Jalankan migration & seeder
+php artisan migrate --seed
+
+# 6. Buat storage link
+php artisan storage:link
+
+# 7. Build asset
+npm run build
+
+# 8. Jalankan server
+php artisan serve
+```
+
+Atau gunakan shortcut:
+
+```bash
+composer setup          # Install + migrate + build
+composer dev            # Jalankan server + queue + logs + vite secara bersamaan
+```
+
+### Akses
+
+- **Website**: http://localhost:8000
+- **Admin Panel**: http://localhost:8000/admin
+- **Login**: http://localhost:8000/login
+
+## 📦 Database Seeders
+
+Jalankan `php artisan db:seed` untuk mengisi data awal:
+
+| Seeder               | Deskripsi                   |
+| -------------------- | --------------------------- |
+| `AdminUserSeeder`    | Akun admin default          |
+| `SiteSettingSeeder`  | Pengaturan situs default    |
+| `GallerySeeder`      | Contoh galeri foto          |
+| `VideoSeeder`        | Contoh video                |
+| `BestPracticeSeeder` | Contoh artikel praktik baik |
+| `DigitalBookSeeder`  | Contoh buku digital         |
+| `LibraryItemSeeder`  | Contoh koleksi perpustakaan |
+| `QuizSeeder`         | Contoh quiz                 |
+| `ContactSeeder`      | Contoh pesan kontak         |
+
+## 🌍 Deployment
+
+### Server Requirements
+
+- PHP 8.2+ dengan ekstensi: `mbstring`, `openssl`, `pdo_mysql`, `tokenizer`, `xml`, `ctype`, `json`
+- MySQL 8.0+
+- Nginx atau Apache
+- Composer
+
+### Deployment Steps
+
+```bash
+# Di server
+git pull origin main
+composer install --no-dev --optimize-autoloader
+php artisan migrate --force
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+php artisan storage:link
+npm run build
+```
+
+## 📝 Lisensi
+
+Project ini dibuat oleh **Dona R. Azhar** untuk keperluan pengembangan kompetensi guru PAUD.
